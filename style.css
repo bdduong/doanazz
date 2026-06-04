@@ -60,9 +60,22 @@ p {
 
 h1 {
   max-width: 9ch;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   font-size: clamp(4rem, 11vw, 8.2rem);
   line-height: 0.84;
+}
+
+.age-badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 10px 14px;
+  border: 3px solid #201b16;
+  border-radius: 6px;
+  background: #ffcf4a;
+  box-shadow: 5px 5px 0 #201b16;
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  line-height: 1.1;
+  font-weight: 900;
 }
 
 .subtitle {
