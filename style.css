@@ -25,7 +25,7 @@
   --text-lead: clamp(1.125rem, 1.6vw, 1.4rem);
   --text-h3: clamp(1.75rem, 2.6vw, 2.9rem);
   --text-h2: clamp(2.4rem, 4.4vw, 4.75rem);
-  --text-display: clamp(3.4rem, 6.8vw, 6.75rem);
+  --text-display: clamp(3.1rem, 5.4vw, 5.5rem);
 }
 
 * {
@@ -92,7 +92,7 @@ h3 {
 }
 
 h1 {
-  max-width: 14ch;
+  max-width: 16ch;
   margin-bottom: var(--space-3);
   font-size: var(--text-display);
   line-height: 0.93;
@@ -469,9 +469,9 @@ p {
 .hero-agent-card > img {
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 6 / 5;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center top;
 }
 
 .hero-agent-heading {
@@ -1867,7 +1867,7 @@ p {
   }
 
   h1 {
-    font-size: clamp(3.25rem, 17vw, 5.1rem);
+    font-size: clamp(2.85rem, 13.5vw, 4rem);
   }
 
   .hero-actions {
