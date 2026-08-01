@@ -268,8 +268,15 @@ p {
   letter-spacing: -0.07em;
 }
 
-.brand-mark span {
+.brand-mark .brand-letters {
+  color: inherit;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.brand-mark .brand-letters i {
   color: var(--accent-bright);
+  font-style: normal;
 }
 
 .brand-name {
