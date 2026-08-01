@@ -2,6 +2,7 @@ const header = document.querySelector('[data-header]');
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('#primary-nav');
 const contactForm = document.querySelector('[data-contact-form]');
+const interestSelect = contactForm?.querySelector('select[name="interest"]');
 
 const closeNavigation = () => {
   header?.classList.remove('is-open');
@@ -35,6 +36,12 @@ document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe
 
 document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
+});
+
+document.querySelectorAll('[data-interest]').forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    if (interestSelect) interestSelect.value = trigger.dataset.interest;
+  });
 });
 
 contactForm?.addEventListener('submit', (event) => {
