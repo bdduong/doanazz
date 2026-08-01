@@ -693,6 +693,59 @@ p {
   text-transform: uppercase;
 }
 
+.home-search {
+  background: var(--cream);
+}
+
+.home-search .section-top {
+  margin-bottom: clamp(42px, 6vw, 72px);
+}
+
+.idx-panel {
+  padding: clamp(22px, 4vw, 46px);
+  border: 1px solid var(--line);
+  background: var(--paper);
+  box-shadow: 0 24px 70px rgba(18, 35, 29, 0.08);
+}
+
+.idx-panel-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 34px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.idx-panel-header h3 {
+  max-width: 650px;
+  margin-bottom: 0;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+}
+
+.idx-kicker {
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.idx-panel .realscout-listings {
+  display: block;
+  min-height: 260px;
+}
+
+.idx-disclosure {
+  margin: 28px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
 .results {
   color: var(--white);
   background: var(--ink);
@@ -1528,6 +1581,11 @@ p {
     max-width: 560px;
   }
 
+  .idx-panel-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .service-card-reverse .service-image-wrap,
   .service-card-reverse .service-copy {
     grid-column: auto;
@@ -1729,6 +1787,10 @@ p {
   .team-card-footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .idx-panel-header .button {
+    width: 100%;
   }
 
   .contact-form {

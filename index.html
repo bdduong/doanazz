@@ -132,7 +132,7 @@
 
         <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
           <a href="#services">Services</a>
-          <a href="#results">Past sales</a>
+          <a href="#home-search">Search homes</a>
           <a href="#about">About Patrick</a>
           <a href="#team">Team</a>
           <a href="#areas">Areas</a>
@@ -249,6 +249,28 @@
               <a class="text-link" href="#contact">Talk property management <span aria-hidden="true">↗</span></a>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section class="home-search section" id="home-search" aria-labelledby="home-search-title">
+        <div class="shell section-top reveal">
+          <div>
+            <p class="section-label">Live MLS access</p>
+            <h2 id="home-search-title">Explore Bay Area homes with a local guide.</h2>
+          </div>
+          <p>Browse current Doan &amp; Associates listings here, then open the full RealScout map to search by neighborhood, price, property type, and more.</p>
+        </div>
+
+        <div class="shell idx-panel reveal">
+          <div class="idx-panel-header">
+            <div>
+              <p class="idx-kicker">Updated through RealScout</p>
+              <h3>Active, pending, and recently sold</h3>
+            </div>
+            <a class="button button-dark" href="https://angelinadoan.realscout.com/homesearch/map" target="_blank" rel="noopener">Open full MLS search <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="realscout-listings agent" data-rep="angelinadoan" data-status="active,pending,sold" data-view="grid__view"></div>
+          <p class="idx-disclosure">Listing data is supplied through RealScout. Information is deemed reliable but not guaranteed and should be independently verified.</p>
         </div>
       </section>
 
@@ -502,6 +524,7 @@
       </div>
     </footer>
 
+    <script src="https://em.realscout.com/assets/em/v3/all.js" defer></script>
     <script src="script.js" defer></script>
   </body>
 </html>
