@@ -897,7 +897,7 @@ p {
 .team-portrait {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 1 / 1.02;
+  aspect-ratio: 4 / 3;
   background: var(--sand);
 }
 
